@@ -303,15 +303,15 @@ Makes editable any HTML element on the page. Applied as jQuery method.
                 } else if(this.options.emptyclass) {
                     this.$element.removeClass(this.options.emptyclass);
                 }
-            /*} else {
+            if(this.options.disabled) {
                 //below required if element disable property was changed
                 if(this.isEmpty) {
-                    this.$element.empty();
+                    //this.$element.empty();
                     if(this.options.emptyclass) {
                         this.$element.removeClass(this.options.emptyclass);
                     }
                 }
-            }*/
+            }
         },        
         
         /**
