@@ -294,7 +294,7 @@ Makes editable any HTML element on the page. Applied as jQuery method.
             }           
             
             //emptytext shown only for enabled
-            if(!this.options.disabled) {
+            //if(!this.options.disabled) {
                 if (this.isEmpty) {
                     this.$element.html(this.options.emptytext);
                     if(this.options.emptyclass) {
@@ -303,7 +303,7 @@ Makes editable any HTML element on the page. Applied as jQuery method.
                 } else if(this.options.emptyclass) {
                     this.$element.removeClass(this.options.emptyclass);
                 }
-            } else {
+            /*} else {
                 //below required if element disable property was changed
                 if(this.isEmpty) {
                     this.$element.empty();
@@ -311,7 +311,7 @@ Makes editable any HTML element on the page. Applied as jQuery method.
                         this.$element.removeClass(this.options.emptyclass);
                     }
                 }
-            }
+            }*/
         },        
         
         /**
